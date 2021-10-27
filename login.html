@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://kit.fontawesome.com/2eae1cd9e8.js" crossorigin="anonymous"></script>
+    <script src="../login/javascript.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+        <div class="login">
+
+            <div class="avatar">
+                <i class='fas fa-gamepad' style='font-size:52px'></i>
+            </div>
+            <div class="content">
+            </div>
+
+            <h2>Login Game</h2>
+            <div class="box-login">
+                <i class="fas fa-user-secret" style="font-size:32px;color:rgb(0, 0, 0)"></i>
+                <input type="text" name="emailaddress" id="emailaddress" placeholder="Email Address">
+            </div>
+
+            <div class="box-login">
+                <i class="fa fa-lock" style="font-size:32px;color:rgb(0, 0, 0)"></i>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="button">
+            <button type="submit" onclick="onClick()">LOGIN</button>
+          </div>
+            <div class="bottom">
+                <a href="../login/password.html">Change Password</a>
+                <a href="../login/register.html">Register</a>
+            </div>
+        </div>
+    </div>
+    <div div class="right-col">
+        <p>Click To play Music</p>
+        <img src="../login/asset/img/play.png" id="icon">
+    </div>
+    </div>
+    <audio id="mySong">
+        <source src="../login/asset/song2.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    if(mySong.paused){
+        mySong.play();
+        icon.src = "../login/asset/img/paused.png";
+    }else{
+        mySong.pause();
+        icon.src = "../login/asset/img/play.png";
+    }
+}
+    </script>
+</body>
+</html>

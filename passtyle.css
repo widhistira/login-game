@@ -1,0 +1,225 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	overflow: hidden;
+}
+img.animated-gif{
+    width: 60px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+.back{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: -60px;
+    cursor: pointer;
+    transition: 0.25px;
+    padding: 10px 20px;
+    background-color: rgba(56, 203, 223, 0.479);
+    font-weight: bold;
+  }
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+
+}
+section .color {
+	position: absolute;
+	filter: blur(150px);
+}
+section .color:nth-child(1)
+{
+	top: -350px;
+	width: 600px;
+	height: 600px;
+	background: #ff359b;
+}
+section .color:nth-child(2)
+{
+	bottom: -150px;
+	left: 100px;
+	width: 500px;
+	height: 500px;
+	background: #fffd67;
+}
+section.color:nth-child(3)
+{
+	bottom: -150px;
+	right: 100px;
+	width: 300px;
+	height: 300px;
+	background: #fffd87;
+}
+
+.box
+{
+	position: relative;
+}
+.box .square
+{
+	position: absolute;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+	background: rgba(255, 255, 255, 0.199);
+	border-radius: 10px;
+	animation: animate 10s linear infinite;
+	animation-delay: calc(-5s * var(--i));
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		transform: translateY(-40px);
+	}
+	50%
+	{
+		transform: translate(50px);
+	}
+}
+
+.box .square:nth-child(1)
+{
+	top: -200px;
+	right: -37px;
+	width: 120px;
+	height: 120px;
+}
+.box .square:nth-child(2)
+{
+	top: 205px;
+	right: 264px;
+	width: 100px;
+	height: 100px;
+	z-index: 5;
+}
+.box .square:nth-child(3)
+{
+	bottom: 50px;
+	right: -60px;
+	width: 80px;
+	height: 80px;
+	z-index: 2;
+}
+.box .square:nth-child(4)
+{
+	bottom: 200px;
+	left: -80px;
+	width: 60px;
+	height: 60px;
+}
+.box .square:nth-child(5)
+{
+	top: -210px;
+	left: 140px;
+	width: 70px;
+	height: 70px;
+}
+.container {
+	position: relative;
+	width: 500px;
+	min-height: 500px;
+	background: rba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 50px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 30px solid rgba(255, 255, 255, 0.2);
+    margin-top: -170px;
+}
+.passform{
+    width: 300px;
+    background-color: rgba(255, 251, 0, 0.747);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.185);
+	background: rgba(255, 137, 3, 0.445);
+    margin: auto;
+    color: #0a0909;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+	margin-bottom: 450px;
+    margin-left: 0px;
+
+}
+#name{
+    width: 100%;
+    height: 350px;
+}
+.name{
+    margin-left: -300px;
+    margin-top: 40px;
+    width: 125px;
+    color: rgb(7, 7, 7);
+    font-size: 18px;
+
+
+}
+.oldpassword{
+    position: relative;
+    left: -150px;
+    top: -37px;
+    line-height: 40px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.newpassword{
+    position: relative;
+    left: -150px;
+    top: -37px;
+    line-height: 40px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.email{
+    position: relative;
+    left: -150px;
+    top: -37px;
+    line-height: 40px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+button{
+    background-color: rgba(255, 251, 0, 0.747);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.185);
+	background: rgba(255, 137, 3, 0.651);
+    display: block;
+    margin: 10px 0px 0px -70px;
+    text-align: center;
+    border-radius: 20px;
+    /* border: 2px solid #aa9e2f81; */
+    padding: 10px 40px;
+    outline: none;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    transition: 0.25px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(64, 224, 131);
+}

@@ -1,0 +1,143 @@
+body {
+    background: url(../login/asset/img/login.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+
+}
+
+.login {
+    background: url(../login/asset/img/3.gif) no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 125px;
+    width: 600px;
+    box-shadow: 0 0 10px 10px rgba(46, 46, 46, 0.521);
+    border-radius: 15px 15px 15px 15px;
+}
+.right-col{
+    float:right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p{
+    font-size: 20px;
+    color: #1a1919;
+    font-weight: 400;
+    margin-right: 15px;
+    font-weight: bold;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+
+}
+.avatar {
+    font-size: 53px;
+    background:rgba(22, 228, 132, 0.589);
+    width: 75px;
+    height: 68px;
+    line-height: 70px;
+    text-align: center;
+    position: fixed;
+    left: 46%;
+    top: 3%;
+    transform: translate(-50% -50%);
+    border-radius: 50%;
+    color: #2c3e50;
+}
+
+.login h2 {
+    text-align: center;
+    color: rgb(3, 3, 3);
+    /* margin-top: -10px; */
+    /* padding-bottom: 100px; */
+    letter-spacing: 4px;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.box-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-bottom: 5px solid white;
+    padding: 8px 0;
+
+    
+}
+
+.box-login i {
+    font-size: 25px;
+    color:whitesmoke
+}
+
+.box-login input {
+    width: 80%;
+    padding: 10px 15px;
+    background: rgba(48, 96, 116, 0.63);
+    border: groove;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.box-login input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+button{
+    background: rgba(24, 133, 179, 0.884);
+    /* background-color: #3baf9f; */
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    margin-left: 25vh;
+    border-radius: 10px;
+    border: 2px solid #dee5e7;
+    padding: 10px 20px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+
+.btn-login:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bottom a {
+    padding: 4px 13px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    background: rgba(48, 96, 116, 0.63);
+    border: groove;
+    outline: none;
+    
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
